@@ -24,7 +24,8 @@
     "@babel/preset-env": "^7.20.2"
   },
   "dependencies": {
-    "ethers": "^6.0.2",
+    "ethers": "5.4",
+    "fs-extra": "^11.1.0",
     "solc": "^0.8.18"
   }
 }
