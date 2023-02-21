@@ -4,7 +4,8 @@
   "description": "<!-- test --> ### 编译solidity",
   "main": "deploy.js",
   "scripts": {
-    "test": "babel-node deploy.js"
+    "test": "babel-node deploy.js",
+    "compileBlurExchange":"yarn solcjs --abi --bin --optimize BlurExchange.sol -o blurBuild/"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,10 @@
     "@babel/preset-env": "^7.20.2"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "@openzeppelin/contracts-upgradeable": "^4.8.1",
     "ethers": "5.4",
     "fs-extra": "^11.1.0",
-    "solc": "v0.8.17+commit.8df45f5f"
+    "solc": "0.8.17"
   }
 }
