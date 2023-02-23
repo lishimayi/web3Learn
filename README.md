@@ -21,6 +21,9 @@
 yarn soljs --abi --bin --include-path node_modules/ --base-path . xxx.sol
 ```
 
+* [ethers.js 监听事件](https://docs.ethers.org/v5/getting-started/#getting-started--events)
+
+
 
 
 
