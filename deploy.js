@@ -20,14 +20,14 @@ async function main() {
     "./blurBuild/BlurExchange_sol_BlurExchange.bin",
     "utf8"
   );
-  console.log(binary);
+  // console.log(binary);
   const contractFactory = new ethers.ContractFactory(abi, binary, wallet);
 
-  // console.log("deploying please wait...");
+  console.log("deploying please wait...");
 
-  // const contract = await contractFactory.deploy();
+  const contract = await contractFactory.deploy();
 
-  // console.log(contract);
+  console.log("deploy success");
 }
 
 main()
