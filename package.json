@@ -5,8 +5,12 @@
   "main": "deploy.js",
   "scripts": {
     "test": "babel-node deploy.js",
+<<<<<<< HEAD
     "compileBlurExchange":"yarn solcjs --abi --bin --optimize BlurExchange.sol -o blurBuild/",
     "cp":"yarn solcjs --abi --bin demo.sol -o demoBuild/"
+=======
+    "compileBlurExchange": "yarn solcjs --abi --bin --optimize BlurExchange.sol -o blurBuild/"
+>>>>>>> ef686c80d6ddac47285f3742a94b0394935ca396
   },
   "repository": {
     "type": "git",
@@ -30,6 +34,7 @@
     "@openzeppelin/contracts-upgradeable": "^4.8.1",
     "ethers": "5.4",
     "fs-extra": "^11.1.0",
-    "solc": "0.8.17"
+    "solc": "0.8.17",
+    "web3": "^1.8.2"
   }
 }

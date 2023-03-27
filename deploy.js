@@ -23,11 +23,12 @@ async function main() {
   // console.log(binary);
   const contractFactory = new ethers.ContractFactory(abi, binary, wallet);
   console.log("contractFactory"+contractFactory);
+
   console.log("deploying please wait...");
 
-  // const contract = await contractFactory.deploy();
+  const contract = await contractFactory.deploy();
 
-  // console.log(contract);
+  console.log("deploy success");
 }
 
 main()
