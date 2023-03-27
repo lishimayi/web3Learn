@@ -5,7 +5,8 @@
   "main": "deploy.js",
   "scripts": {
     "test": "babel-node deploy.js",
-    "compileBlurExchange":"yarn solcjs --abi --bin --optimize BlurExchange.sol -o blurBuild/"
+    "compileBlurExchange":"yarn solcjs --abi --bin --optimize BlurExchange.sol -o blurBuild/",
+    "cp":"yarn solcjs --abi --bin demo.sol -o demoBuild/"
   },
   "repository": {
     "type": "git",

@@ -7,27 +7,28 @@ async function main() {
   );
 
   const wallet = new ethers.Wallet(
-    "433cb644e50838e4f9a784e6ae539e0c8fc026c0443fe29adfe92193d1797682",
+    "fa32a867db69330f716c8e39fbb7528e8463bcd7d0ee1936550932e67199d19a",
     provider
   );
 
   const abi = fs.readFileSync(
-    "./blurBuild/BlurExchange_sol_BlurExchange.abi",
+    "./demoBuild/demo_sol_dmeo.abi",
     "utf8"
   );
 
   const binary = fs.readFileSync(
-    "./blurBuild/BlurExchange_sol_BlurExchange.bin",
+    "./demoBuild/demo_sol_dmeo.bin",
     "utf8"
   );
   // console.log(binary);
   const contractFactory = new ethers.ContractFactory(abi, binary, wallet);
-  console.log("contractFactory"+contractFactory);
+  console.log("-------------");
+  console.log(contractFactory);
+  console.log("-------------");
   console.log("deploying please wait...");
-
-  // const contract = await contractFactory.deploy();
-
-  // console.log(contract);
+  const contract = await contractFactory.deploy();
+  console.log("+++++++++++++++++++++");
+  console.log(contract);
 }
 
 main()
